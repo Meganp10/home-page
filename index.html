@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Stack+Sans+Notch:wght@200..700&family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
-  
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quattrocento&display=swap" rel="stylesheet"> 
 
 <style>
   
@@ -29,7 +29,7 @@
    text-align: center;
    margin: 0 auto;
    padding-top: 10px;
-  font-size: 2em;
+   font-size: 2em;
   }
   
  #nav-bar {
@@ -63,32 +63,49 @@ nav {
       text-decoration: underline;
     }
   
-  .content{
-    display: grid;
-    grid-template-columns: 30% 70%;
-    background-color: pink;
-  }
-  
-  .content img{
-    width: 100%;
-    height: auto;
-  }
+.content {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: start;
+  row-gap: 10px; 
+}
+
+.content img {
+  width: 100%;
+  display: block;
+}
   
   .lh{
     display: block;
     padding-left: 40px;
   }
   
+  .page-title{
+    color: #011608;
+    font-family: "Playfair Display", serif;
+    font-size: 2em;
+    padding-left: 20px;
+    background-color: #FFFFFE;
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+  
   h1{
     font-family: "Playfair Display", serif;
     font-size: 1.5em;
     color: #FFFFFE;
+    background-color: #011608;
+    padding: 10px;
+   
   }
   
   h2{
-    font-family: "Playfair Display", serif;
+    font-family: "Quattrocento", serif;
     font-size: 1.3em;
     color: #FFFFFE;
+  
+    background-color: #011608;
+    padding: 10px;
   }
   
   p{
@@ -97,8 +114,30 @@ nav {
     color: #FFFFFE;
   }
   
- 
+  .staff img{
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
   
+  .staff-title{
+    color: #011608;
+    font-family: "Playfair Display", serif;
+    font-size: 2em;
+    text-align: center;
+    background-color: #FFFFFE;
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+  
+.staff-info {
+  line-height: 1;
+}
+  
+.staff-info h1,
+.staff-info h2 {
+  margin: 0;
+}
  
   
   </style>
@@ -109,7 +148,7 @@ nav {
   
     <div class="container">
       
-    <h1 id="site-title"> The Garden Stand</h1>
+   <h1 id="site-title"> The Garden Stand</h1>  
  
   <div id="nav-bar">
    <nav>
@@ -125,38 +164,33 @@ nav {
     </ul>
   </nav>
 </div>   
-      
+ <div class="staff-title">Meet The AB Team!</div> 
+  
 <div class="content">
 
-   <div class="lh">
-      <h1>Come Visit Us!</h1>
-      <h2>Location</h2>
-      <p> 2-90 Peel St</p>
-      <p>New Hamburg ON N3A 1E3 Canada</p>
-    
-      <h2>Hours</h2>
-     
-    <div class="hours">
-  <div class="day">Sunday</div>
-  <div class="time">10:00AM - 4:00PM</div>
+  <img src="Adam.png" alt="Adam">
+  <div class="staff-info">
+    <h1>Adam</h1>
+    <h2>Owner &amp Executive Chef</h2>
+  </div>
 
-  <div class="day">Monday</div>
-  <div class="time">8:00AM - 6:00PM</div>
+  <img src="Kyle.png" alt="Kyle">
+  <div class="staff-info">
+    <h1>Kyle</h1>
+    <h2>Head Chef</h2>
+  </div>
 
-  <div class="day">Tue-Fri</div>
-  <div class="time">8:00AM - 8:00PM</div>
+  <img src="Taylor.png" alt="Taylor">
+  <div class="staff-info">
+    <h1>Taylor</h1>
+    <h2>Culinary Lead &amp Kitchen Manager</h2>
+  </div>
 
-  <div class="day">Saturday</div>
-  <div class="time">9:00AM - 6:00PM</div>
-</div> 
-    </div>
+</div>
+      
 
-  <img src="Store.png" alt="Stone building view">
 </div>
  
-     
-</div> 
-  
-    </div>
+ 
   </body>
 </html>
